@@ -1,0 +1,15 @@
+[extension]
+id = "iphone-path"
+version = "0.1.0"
+api_version = 1
+name = "iPhone Path"
+description = "Browse iPhone files through Windows Portable Devices."
+min_xefm = "1.10.0"
+platforms = ["windows"]
+updates = "github:SinisterSoftware/xefm-iphone-path"
+
+[contributes.path_schemes]
+iphone = "iphone_path.logic:IPHONE_SCHEME"
+
+[requires]
+python_packages = ["pywin32"]
